@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coffee Crave — Kolkata's Cozy Cafe</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ========== STICKY NAV ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-icon">☕</span>
+        <span>Coffee<em>Crave</em></span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#popular">Popular</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#location">Location</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="lights-row">
+        <span class="bulb"></span><span class="bulb"></span><span class="bulb"></span>
+        <span class="bulb"></span><span class="bulb"></span><span class="bulb"></span>
+        <span class="bulb"></span><span class="bulb"></span><span class="bulb"></span>
+        <span class="bulb"></span><span class="bulb"></span><span class="bulb"></span>
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="steam-container">
+        <div class="steam s1"></div>
+        <div class="steam s2"></div>
+        <div class="steam s3"></div>
+      </div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-tagline">Est. Bansdroni, Kolkata</p>
+      <h1 class="hero-title">Welcome to<br><span>Coffee Crave</span></h1>
+      <p class="hero-sub">Kolkata's Cozy Hangout Spot for<br>Coffee &amp; Indo-Chinese Delights</p>
+      <div class="hero-btns">
+        <a href="#menu" class="btn btn-primary">View Menu</a>
+        <a href="#location" class="btn btn-outline">Visit Us</a>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <span>Scroll Down</span>
+      <i class="fa fa-chevron-down"></i>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="about section" id="about">
+    <div class="container about-grid">
+      <div class="about-visual">
+        <div class="about-img-wrap">
+          <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=600&q=80" alt="Inside Coffee Crave cafe" />
+          <div class="about-badge">
+            <span>Since</span>
+            <strong>2020</strong>
+          </div>
+        </div>
+      </div>
+      <div class="about-text">
+        <p class="section-label">Our Story</p>
+        <h2 class="section-title">A Little Corner of <em>Comfort</em></h2>
+        <p class="about-desc">
+          Coffee Crave is a cozy neighborhood cafe in Bansdroni, Kolkata, known for its delicious Indo-Chinese dishes, comforting soups, flavorful noodles, burgers, and refreshing drinks. A perfect place to hang out with friends, enjoy great food, and relax.
+        </p>
+        <div class="about-stats">
+          <div class="stat">
+            <strong>50+</strong>
+            <span>Menu Items</span>
+          </div>
+          <div class="stat">
+            <strong>100+</strong>
+            <span>Happy Guests</span>
+          </div>
+          <div class="stat">
+            <strong>5★</strong>
+            <span>Rated Experience</span>
+          </div>
+        </div>
+        <a href="#menu" class="btn btn-primary">Explore Our Menu</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== POPULAR DISHES ========== -->
+  <section class="popular section" id="popular">
+    <div class="container">
+      <p class="section-label center">Chef's Picks</p>
+      <h2 class="section-title center">Popular <em>Dishes</em></h2>
+      <p class="section-sub center">Our most loved plates — made fresh every day</p>
+      <div class="dishes-grid">
+
+        <!-- Card 1 -->
+        <div class="dish-card">
+          <div class="dish-img-wrap">
+            <img src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=500&q=80" alt="Chicken Fried Rice" />
+            <span class="dish-badge">Bestseller</span>
+          </div>
+          <div class="dish-info">
+            <h3>Chicken Fried Rice</h3>
+            <p>Wok-tossed rice with tender chicken, egg & fresh veggies in a savory soy blend</p>
+            <div class="dish-footer">
+              <span class="dish-price">₹255</span>
+              <a href="#menu" class="dish-order">Order →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="dish-card">
+          <div class="dish-img-wrap">
+            <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=500&q=80" alt="Chicken Hakka Noodles" />
+          </div>
+          <div class="dish-info">
+            <h3>Chicken Hakka Noodles</h3>
+            <p>Stir-fried noodles loaded with chicken strips, capsicum & Indo-Chinese sauces</p>
+            <div class="dish-footer">
+              <span class="dish-price">₹239</span>
+              <a href="#menu" class="dish-order">Order →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="dish-card">
+          <div class="dish-img-wrap">
+            <img src="https://images.unsplash.com/photo-1527477396000-e27163b481c2?w=500&q=80" alt="Dragon Chicken" />
+            <span class="dish-badge spicy">🔥 Spicy</span>
+          </div>
+          <div class="dish-info">
+            <h3>Dragon Chicken</h3>
+            <p>Crispy chicken tossed in a fiery dragon sauce with peppers & cashews</p>
+            <div class="dish-footer">
+              <span class="dish-price">₹295</span>
+              <a href="#menu" class="dish-order">Order →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="dish-card">
+          <div class="dish-img-wrap">
+            <img src="https://images.unsplash.com/photo-1567620832903-9fc6debc209f?w=500&q=80" alt="Crispy Chicken Wings" />
+          </div>
+          <div class="dish-info">
+            <h3>Crispy Chicken Wings</h3>
+            <p>Golden fried wings seasoned to perfection — crunchy outside, juicy inside</p>
+            <div class="dish-footer">
+              <span class="dish-price">₹255</span>
+              <a href="#menu" class="dish-order">Order →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="dish-card">
+          <div class="dish-img-wrap">
+            <img src="https://images.unsplash.com/photo-1519984388953-d2406bc725e1?w=500&q=80" alt="Fish Fry" />
+          </div>
+          <div class="dish-info">
+            <h3>Fish Fry</h3>
+            <p>Classic Bengali-style spiced fish fry — crispy, light, and absolutely delicious</p>
+            <div class="dish-footer">
+              <span class="dish-price">₹149</span>
+              <a href="#menu" class="dish-order">Order →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="dish-card">
+          <div class="dish-img-wrap">
+            <img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=500&q=80" alt="Oreo Shake" />
+            <span class="dish-badge">Fan Fav</span>
+          </div>
+          <div class="dish-info">
+            <h3>Oreo Shake</h3>
+            <p>Thick, creamy shake blended with Oreo cookies — the perfect sweet finish</p>
+            <div class="dish-footer">
+              <span class="dish-price">₹120</span>
+              <a href="#menu" class="dish-order">Order →</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FULL MENU ========== -->
+  <section class="menu section" id="menu">
+    <div class="container">
+      <p class="section-label center">What We Serve</p>
+      <h2 class="section-title center">Our Full <em>Menu</em></h2>
+      <p class="section-sub center">Handcrafted flavors for every craving</p>
+
+      <!-- Category Tabs -->
+      <div class="menu-tabs" id="menuTabs">
+        <button class="tab-btn active" data-tab="combo">Combos</button>
+        <button class="tab-btn" data-tab="soups">Soups</button>
+        <button class="tab-btn" data-tab="starters">Starters</button>
+        <button class="tab-btn" data-tab="gravy">Gravy</button>
+        <button class="tab-btn" data-tab="rice">Fried Rice</button>
+        <button class="tab-btn" data-tab="noodles">Noodles</button>
+        <button class="tab-btn" data-tab="pasta">Pasta</button>
+        <button class="tab-btn" data-tab="burgers">Burgers</button>
+        <button class="tab-btn" data-tab="wraps">Wraps</button>
+        <button class="tab-btn" data-tab="momos">Momos</button>
+        <button class="tab-btn" data-tab="dessert">Dessert</button>
+        <button class="tab-btn" data-tab="drinks">Drinks</button>
+      </div>
+
+      <!-- COMBO MEALS -->
+      <div class="menu-panel active" id="tab-combo">
+        <div class="menu-items-grid">
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Egg Fried Rice With Chilli Chicken</span><span class="mi-dot"></span></div><span class="mi-price">₹239</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Egg Hakka Noodles With Chilli Chicken</span><span class="mi-dot"></span></div><span class="mi-price">₹239</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Veg Fried Rice With Chilli Paneer</span><span class="mi-dot"></span></div><span class="mi-price">₹225</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Egg Fried Rice With Chilli Fish</span><span class="mi-dot"></span></div><span class="mi-price">₹265</span></div>
+        </div>
+      </div>
+
+      <!-- SOUPS -->
+      <div class="menu-panel" id="tab-soups">
+        <div class="menu-items-grid">
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Veg Clear Soup</span></div><span class="mi-price">₹115</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Veg Hot And Sour Soup</span></div><span class="mi-price">₹129</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Chicken Clear Soup</span></div><span class="mi-price">₹155</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Chicken Hot And Sour Soup</span></div><span class="mi-price">₹185</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Chicken Stew</span></div><span class="mi-price">₹245</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Chicken Lemon Coriander Soup</span></div><span class="mi-price">₹219</span></div>
+        </div>
+      </div>
+
+      <!-- STARTERS -->
+      <div class="menu-panel" id="tab-starters">
+        <div class="menu-items-grid">
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Crispy Chicken Wings</span></div><span class="mi-price">₹255</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Peri Peri Chicken Wings</span></div><span class="mi-price">₹265</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Honey Garlic Chicken Wings</span></div><span class="mi-price">₹279</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Drums Of Heaven</span></div><span class="mi-price">₹275</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Chicken Lollipop</span></div><span class="mi-price">₹255</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Butter Garlic Chicken</span></div><span class="mi-price">₹279</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Fish Fry</span></div><span class="mi-price">₹149</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Fried Chilli Fish</span></div><span class="mi-price">₹309</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Fish and Chips</span></div><span class="mi-price">₹280</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Dragon Chicken</span></div><span class="mi-price">₹295</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Golden Fried Prawns</span></div><span class="mi-price">₹350</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Chicken Cheese Balls</span></div><span class="mi-price">₹239</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Chicken Finger</span></div><span class="mi-price">₹239</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Chicken Pakora</span></div><span class="mi-price">₹225</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Chicken Popcorn</span></div><span class="mi-price">₹225</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Chicken Nuggets</span></div><span class="mi-price">₹165</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Crispy Chicken Strips</span></div><span class="mi-price">₹269</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Chicken Cutlet</span></div><span class="mi-price">₹129</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Fish Finger</span></div><span class="mi-price">₹249</span></div>
+        </div>
+      </div>
+
+      <!-- GRAVY -->
+      <div class="menu-panel" id="tab-gravy">
+        <div class="menu-items-grid">
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Chilli Chicken Gravy</span></div><span class="mi-price">₹155</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Chilli Paneer</span></div><span class="mi-price">₹140</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Chilli Mushroom</span></div><span class="mi-price">₹155</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Hot Garlic Chicken</span></div><span class="mi-price">₹169</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Sweet And Sour Chicken</span></div><span class="mi-price">₹169</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Schezwan Chicken</span></div><span class="mi-price">₹169</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Chilli Fish</span></div><span class="mi-price">₹169</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Hot Garlic Fish</span></div><span class="mi-price">₹179</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Sweet And Sour Fish</span></div><span class="mi-price">₹185</span></div>
+        </div>
+      </div>
+
+      <!-- FRIED RICE -->
+      <div class="menu-panel" id="tab-rice">
+        <div class="menu-items-grid">
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Veg Fried Rice</span></div><span class="mi-price">₹165</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Veg Schezwan Fried Rice</span></div><span class="mi-price">₹175</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Veg Burnt Garlic Fried Rice</span></div><span class="mi-price">₹205</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Egg Fried Rice</span></div><span class="mi-price">₹199</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Egg Schezwan Fried Rice</span></div><span class="mi-price">₹209</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Egg Burnt Garlic Fried Rice</span></div><span class="mi-price">₹225</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Chicken Fried Rice</span></div><span class="mi-price">₹255</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Chicken Schezwan Fried Rice</span></div><span class="mi-price">₹269</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Chicken Burnt Garlic Fried Rice</span></div><span class="mi-price">₹279</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Mixed Fried Rice</span></div><span class="mi-price">₹295</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Mixed Schezwan Fried Rice</span></div><span class="mi-price">₹309</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Mixed Burnt Garlic Fried Rice</span></div><span class="mi-price">₹325</span></div>
+        </div>
+      </div>
+
+      <!-- NOODLES -->
+      <div class="menu-panel" id="tab-noodles">
+        <div class="menu-items-grid">
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Veg Hakka Noodles</span></div><span class="mi-price">₹165</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Veg Schezwan Noodles</span></div><span class="mi-price">₹175</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Veg Burnt Garlic Noodles</span></div><span class="mi-price">₹205</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Egg Hakka Noodles</span></div><span class="mi-price">₹199</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Egg Schezwan Noodles</span></div><span class="mi-price">₹209</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Egg Burnt Garlic Noodles</span></div><span class="mi-price">₹225</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Chicken Hakka Noodles</span></div><span class="mi-price">₹239</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Chicken Schezwan Noodles</span></div><span class="mi-price">₹219</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Chicken Burnt Garlic Noodles</span></div><span class="mi-price">₹279</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Mixed Hakka Noodles</span></div><span class="mi-price">₹279</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Mixed Schezwan Noodles</span></div><span class="mi-price">₹295</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Mixed Burnt Garlic Noodles</span></div><span class="mi-price">₹325</span></div>
+        </div>
+      </div>
+
+      <!-- PASTA -->
+      <div class="menu-panel" id="tab-pasta">
+        <div class="menu-items-grid">
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Veg White Sauce Pasta</span></div><span class="mi-price">₹195</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Veg Red Sauce Pasta</span></div><span class="mi-price">₹195</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Chicken White Sauce Pasta</span></div><span class="mi-price">₹239</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Chicken Red Sauce Pasta</span></div><span class="mi-price">₹239</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Chicken Pink Sauce Pasta</span></div><span class="mi-price">₹249</span></div>
+        </div>
+      </div>
+
+      <!-- BURGERS -->
+      <div class="menu-panel" id="tab-burgers">
+        <div class="menu-items-grid">
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Aloo Tikki Burger</span></div><span class="mi-price">₹129</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Crispy Paneer Burger</span></div><span class="mi-price">₹145</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Crispy Chicken Burger</span></div><span class="mi-price">₹175</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Chicken Cheese Burger</span></div><span class="mi-price">₹205</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Egg Chicken Cheese Burger</span></div><span class="mi-price">₹235</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Double Decker Chicken Burger</span></div><span class="mi-price">₹259</span></div>
+        </div>
+      </div>
+
+      <!-- WRAPS -->
+      <div class="menu-panel" id="tab-wraps">
+        <div class="menu-items-grid">
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Paneer Tikka Wrap</span></div><span class="mi-price">₹150</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Crispy Chicken Wrap</span></div><span class="mi-price">₹175</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Tandoori Chicken Wrap</span></div><span class="mi-price">₹189</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Butter Chicken Wrap</span></div><span class="mi-price">₹185</span></div>
+        </div>
+      </div>
+
+      <!-- MOMOS -->
+      <div class="menu-panel" id="tab-momos">
+        <div class="menu-items-grid">
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Chicken Steamed Momos</span></div><span class="mi-price">₹159</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Chicken Fried Momos</span></div><span class="mi-price">₹189</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Pan Fried Chicken Momos</span></div><span class="mi-price">₹215</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Schezwan Chicken Momos</span></div><span class="mi-price">₹215</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Veg Steam Momos</span></div><span class="mi-price">₹145</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Veg Fried Momos</span></div><span class="mi-price">₹165</span></div>
+        </div>
+      </div>
+
+      <!-- DESSERT -->
+      <div class="menu-panel" id="tab-dessert">
+        <div class="menu-items-grid">
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Oreo Sundae</span></div><span class="mi-price">₹140</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">KitKat Sundae</span></div><span class="mi-price">₹140</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Strawberry Sundae</span></div><span class="mi-price">₹130</span></div>
+        </div>
+      </div>
+
+      <!-- DRINKS -->
+      <div class="menu-panel" id="tab-drinks">
+        <div class="menu-items-grid">
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Adrak Elaichi Chai</span></div><span class="mi-price">₹40</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Plain Black Tea</span></div><span class="mi-price">₹35</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Lemon Tea</span></div><span class="mi-price">₹35</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Honey Lemon Ginger Tea</span></div><span class="mi-price">₹50</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Green Tea</span></div><span class="mi-price">₹35</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Fresh Lime Soda</span></div><span class="mi-price">₹65</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Virgin Mojito</span></div><span class="mi-price">₹75</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Blue Lagoon Mocktail</span></div><span class="mi-price">₹75</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Mint Lemonade</span></div><span class="mi-price">₹75</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Watermelon Mojito</span></div><span class="mi-price">₹85</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Kiwi Mojito</span></div><span class="mi-price">₹90</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Iced Lemon Tea</span></div><span class="mi-price">₹75</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Oreo Shake</span></div><span class="mi-price">₹120</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">KitKat Shake</span></div><span class="mi-price">₹130</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Strawberry Shake</span></div><span class="mi-price">₹100</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Mango Shake</span></div><span class="mi-price">₹100</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Blackcurrant Shake</span></div><span class="mi-price">₹100</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Lassi</span></div><span class="mi-price">₹70</span></div>
+          <div class="menu-item"><div class="mi-left"><span class="mi-name">Mango Lassi</span></div><span class="mi-price">₹80</span></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== GALLERY ========== -->
+  <section class="gallery section" id="gallery">
+    <div class="container">
+      <p class="section-label center">Our Vibe</p>
+      <h2 class="section-title center">Inside <em>Coffee Crave</em></h2>
+    </div>
+    <div class="gallery-grid">
+      <div class="g-item g-tall">
+        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600&q=80" alt="Cozy cafe interior" />
+        <div class="g-overlay"><span>The Ambiance</span></div>
+      </div>
+      <div class="g-item">
+        <img src="https://images.unsplash.com/photo-1525610553991-2bede1a236e2?w=600&q=80" alt="Cafe food" />
+        <div class="g-overlay"><span>Fresh Plates</span></div>
+      </div>
+      <div class="g-item">
+        <img src="https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?w=600&q=80" alt="Coffee drinks" />
+        <div class="g-overlay"><span>Our Drinks</span></div>
+      </div>
+      <div class="g-item g-wide">
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&q=80" alt="Food spread" />
+        <div class="g-overlay"><span>The Spread</span></div>
+      </div>
+      <div class="g-item">
+        <img src="https://images.unsplash.com/photo-1481833761820-0509d3217039?w=600&q=80" alt="Cafe seating" />
+        <div class="g-overlay"><span>Seating Area</span></div>
+      </div>
+      <div class="g-item">
+        <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=600&q=80" alt="Cafe atmosphere" />
+        <div class="g-overlay"><span>Warm Nights</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== LOCATION ========== -->
+  <section class="location section" id="location">
+    <div class="container">
+      <p class="section-label center">Find Us</p>
+      <h2 class="section-title center">Come <em>Visit</em> Us</h2>
+    </div>
+    <div class="location-wrap">
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3685.9506218345944!2d88.3695!3d22.4784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0271ba0a43a21d%3A0x1e24afe2584c2b64!2sBansdroni%2C%20Kolkata%2C%20West%20Bengal%20700070!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+          width="100%"
+          height="100%"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Coffee Crave Location">
+        </iframe>
+      </div>
+      <div class="location-info">
+        <div class="loc-card">
+          <div class="loc-icon"><i class="fa fa-map-marker-alt"></i></div>
+          <div>
+            <h4>Address</h4>
+            <p>Adiganga Rd, Bansdroni<br>Kolkata, West Bengal 700070</p>
+          </div>
+        </div>
+        <div class="loc-card">
+          <div class="loc-icon"><i class="fa fa-phone"></i></div>
+          <div>
+            <h4>Phone</h4>
+            <p><a href="tel:+919836199184">+91 98361 99184</a></p>
+          </div>
+        </div>
+        <div class="loc-card">
+          <div class="loc-icon"><i class="fa fa-clock"></i></div>
+          <div>
+            <h4>Opening Hours</h4>
+            <p>Mon – Sun: 11:00 AM – 11:00 PM</p>
+          </div>
+        </div>
+        <a href="https://maps.google.com/?q=Bansdroni,Kolkata" target="_blank" class="btn btn-primary" style="margin-top:1rem;">Get Directions</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <p class="section-label center">Say Hello</p>
+      <h2 class="section-title center">Get In <em>Touch</em></h2>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <i class="fa fa-phone-alt"></i>
+          <h4>Call Us</h4>
+          <p><a href="tel:+919836199184">+91 98361 99184</a></p>
+        </div>
+        <div class="contact-card">
+          <i class="fa fa-map-pin"></i>
+          <h4>Our Location</h4>
+          <p>Adiganga Rd, Bansdroni<br>Kolkata – 700070</p>
+        </div>
+        <div class="contact-card">
+          <i class="fa fa-clock"></i>
+          <h4>Open Hours</h4>
+          <p>Every Day<br>11:00 AM – 11:00 PM</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#hero" class="nav-logo">
+          <span class="logo-icon">☕</span>
+          <span>Coffee<em>Crave</em></span>
+        </a>
+        <p>Kolkata's favorite cozy cafe for Indo-Chinese food & refreshing drinks.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#popular">Popular Dishes</a></li>
+          <li><a href="#menu">Full Menu</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h5>Categories</h5>
+        <ul>
+          <li><a href="#menu">Starters</a></li>
+          <li><a href="#menu">Fried Rice</a></li>
+          <li><a href="#menu">Noodles</a></li>
+          <li><a href="#menu">Burgers & Wraps</a></li>
+          <li><a href="#menu">Drinks</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Coffee Crave Cafe — All Rights Reserved</p>
+      <p>Made with ❤️ in Kolkata</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
